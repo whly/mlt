@@ -1,2 +1,6 @@
 Flask==0.10.1
 future==0.16.0
+itsdangerous==0.24
+passlib==1.6.5
+requests==2.11.1
+stripe==1.27.1
