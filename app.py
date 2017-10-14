@@ -63,8 +63,8 @@ def webhook():
     # Here we evaluate how well our model did.
     train_metrics = estimator.evaluate(input_fn=train_input_fn)
     eval_metrics = estimator.evaluate(input_fn=eval_input_fn)
-    r = "train metrics: %r"% train_metrics
-    r = r + "eval metrics: %r"% eval_metrics
+    r = "train metrics111: %r"% train_metrics
+    r = r + "eval metrics111: %r"% eval_metrics
     
     #res = json.dumps(res, indent=4)
     # print(res)
