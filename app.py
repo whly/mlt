@@ -29,6 +29,7 @@ from flask import Flask
 from flask import request
 from flask import make_response
 
+from sklearn import svm, metrics, model_selection
 import numpy as np
 import tensorflow as tf
 
@@ -64,7 +65,7 @@ def webhook():
     train_metrics = estimator.evaluate(input_fn=train_input_fn)
     eval_metrics = estimator.evaluate(input_fn=eval_input_fn)
     r = "train metrics111: %r"% train_metrics
-    r = r + "eval metrics111: %r"% eval_metrics
+    r = r + "eval metrics222: %r"% eval_metrics
     
     #res = json.dumps(res, indent=4)
     # print(res)
